@@ -7,10 +7,15 @@
     </Head>
   </Html>
   <h1>About Page</h1>
+  <h2>Counter</h2>
+  <p>Count: {{ counter }}</p>
+  <div><button @click="counter++">+</button></div>
   </div>
 </template>
 
 <script setup>
+const counter = useState('counter', () => 0);
+
 // definePageMeta({
 //   middleware: defineNuxtRouteMiddleware((to, from) => {
 //     console.log('to', to);

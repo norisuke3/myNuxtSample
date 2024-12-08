@@ -2,12 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+
   components: [
     {
       path: '~/components',
     },
   ],
+
   css: ['assets/style.css'],
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -15,4 +18,6 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', href: '/icon.png' }],
     },
   },
+
+  // modules: ['@nuxtjs/tailwindcss'],
 })
