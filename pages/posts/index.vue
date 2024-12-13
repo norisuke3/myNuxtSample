@@ -21,10 +21,7 @@ console.log('error', error.value);
     <p v-if="error">{{ error }}</p>
     <p v-if="pending">Loading...</p>
     <ol>
-  <li v-for="post in posts" :key="post.id">
-    <NuxtLink :to="`/posts/${post.id}`">{{ post.title }}
-    </NuxtLink>
-  </li>
+      <li v-for="post in posts" :key="post.id">{{ post.title }}</li>
     </ol>
   </div>
 </template>

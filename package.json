@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@prisma/client": "^6.0.1",
+    "fs-extra": "^11.2.0",
     "nuxt": "^3.14.1592",
     "prisma": "^6.0.1",
     "vue": "latest",

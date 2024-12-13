@@ -1,9 +1,16 @@
 <template>
-<div>
-  <Html lang="ja"/>
-  <Navbar></Navbar>
-  <slot />
-</div>
+  <div>
+    <nav>
+      <NuxtLink to="/">Home</NuxtLink>
+      <NuxtLink to="/posts">Posts</NuxtLink>
+    </nav>
+    <slot />
+  </div>
+  <!-- <div> -->
+  <!-- <Html lang="ja"/> -->
+  <!-- <Navbar></Navbar> -->
+  <!-- <slot /> -->
+  <!-- </div> -->
 </template>
 
 <script setup>
@@ -16,6 +23,9 @@ useHead({
 </script>
 
 <style>
+  nav > a{
+    margin-right: 10px;
+  }
 /* .page-enter-active, */
 /* .page-leave-active { */
 /*   transition: all 0.4s; */
